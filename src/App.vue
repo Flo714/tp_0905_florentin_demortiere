@@ -7,10 +7,10 @@
     <div class="lg:flex lg:justify-between">
       <h1 class="m-4 mt-14 text-4xl font-bold text-center">Search properties to rent</h1>
 
-      <div class="mt-14 mx-6 px-2 py-1 border-2 border-indigo-100 rounded-lg flex justify-between bg-white lg:flex-1 py-1 ml-32">
-          <p class="text-gray-900 font-medium text-left lg:">Search with Search Bar</p>
+      <div class="mt-14 mx-6 px-2 border-2 border-indigo-100 rounded-lg flex justify-between bg-white lg:flex-1 lg:ml-48 lg:pt-2 lg:pb-2">
+          <p class="text-gray-900 font-medium text-left pt-1 lg:">Search with Search Bar</p>
 
-          <flechebas class="p-1 my-1 bg-indigo-100 rounded-xl lg:p-2 "/>
+          <flechebas class="p-2 my-1 bg-indigo-100 rounded-xl "/>
       </div>
     </div>
 
