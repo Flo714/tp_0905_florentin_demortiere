@@ -1,7 +1,8 @@
 <template>
   <div class="bg-indigo-25">
     <div>
-      <header1 />
+      <header1 class="xl:hidden"/>
+      <headerxl class="hidden xl:visible" />
     </div>
 
     <div class="lg:flex lg:justify-between">
@@ -14,10 +15,31 @@
       </div>
     </div>
 
-    <div class="mt-10 mx-6 flex justify-between bg-white rounded-lg">
+    <div class="mt-10 mx-6 flex justify-between bg-white rounded-lg lg:hidden">
       <p class=" px-2 py-4 text-gray-500 font-medium">Search location</p>
 
       <search class="bg-indigo-500 m-2 p-3"/>
+    </div>
+
+    <div class="hidden lg:grid lg:grid-cols-4 lg:mt-8 lg: mx-12">
+      <div class="border-r-2 m-2">
+        <p class="text-gray-500 ">Location</p>
+        <p class="font-semibold">New York, USA</p>
+      </div>
+
+      <div class="border-r-2 m-2">
+        <p class="text-gray-500">When</p>
+        <p class="font-semibold">Select Move-in Date</p>
+      </div>
+
+      <div class="border-r-2 m-2">
+        <p class="text-gray-500">Price</p>
+        <p class="font-semibold">$500-$2,500</p>
+      </div>
+
+      <div class="pl-28">
+        <p class="bg-indigo-500 text-white px-5 py-4 rounded-lg m-2 pl-6 text-center">Search</p>
+      </div>
     </div>
 
 
@@ -44,8 +66,9 @@ import header1 from './components/header.vue';
 import footer1 from './components/footer.vue';
 import flechebas from './components/icones/flechebas.vue'
 import search from './components/icones/search.vue'
+import headerxl from './components/headerxl.vue';
 export default {
   name: "App",
-  components:  { card, header1, footer1, flechebas, search}
+  components:  { card, header1, footer1, flechebas, search, headerxl}
 };
 </script>
